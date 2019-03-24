@@ -5,8 +5,10 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Scanner;
+//This class is for calculating the time from beginning to end when babysitting 
 
 public class Time {
+//initialize the scanner for user input 
 	Scanner scnr = new Scanner(System.in);
 
 	public static String userStart;
