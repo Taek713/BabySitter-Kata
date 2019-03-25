@@ -19,7 +19,7 @@ The job:
 -The time ranges are the same as the babysitter (5pm through 4am)
 Deliverable:
 
-Calculate total pay, based on babysitter start and end time, and a family.
+Calculate total pay, based on babysitter start and end time, and a family, with one night of charge.
 Go to the Babysitter main to run, and Total calculator test to run the test, pretty simple.
 
 

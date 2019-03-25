@@ -59,6 +59,7 @@ public class TotalCalculator {
 			parseEndInt += 2400;
 		}
 //before 11pm
+// Using Math.ceil to return the number closest to the whole hour or dollar
 		if (parseEndInt <= eleven) {
 			workedT = parseEndInt - parseStartInt;
 			return 15 * (int) Math.ceil(workedT / 100.0);

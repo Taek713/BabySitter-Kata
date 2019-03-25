@@ -24,6 +24,7 @@ class TotalCalculatorTest {
 	}
 
 //Testing Families A, B and C with different time inputs and different total pay
+	@SuppressWarnings("static-access")
 	@Test
 	public void famABeforeElevenTotalCalculation() {
 		totalCalculator = new TotalCalculator(start, end);
@@ -32,6 +33,7 @@ class TotalCalculatorTest {
 		assertEquals(90, totalCalculator.famATotalCalculation(totalCalculator.getStart(), totalCalculator.getEnd()));
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void famBBeforeTenTotalCalculation() {
 		totalCalculator = new TotalCalculator(start, end);
@@ -40,6 +42,7 @@ class TotalCalculatorTest {
 		assertEquals(60, totalCalculator.famBTotalCalculation(totalCalculator.getStart(), totalCalculator.getEnd()));
 	}
 
+	@SuppressWarnings("static-access")
 	@Test
 	public void famCBeforeTenTotalCalculation() {
 		totalCalculator = new TotalCalculator(start, end);
