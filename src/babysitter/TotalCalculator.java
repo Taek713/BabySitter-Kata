@@ -27,13 +27,14 @@ public class TotalCalculator {
 	public void setEnd(String end) {
 		this.end = end;
 	}
-	//Setting up scanner reader to get family choice from user.
+
+	// Setting up scanner reader to get family choice from user.
 	public static String getFamFromUser() {
 		Scanner scnr = new Scanner(System.in);
 		System.out.print("Hello! What family are you babysitting for? Enter A, B, or C: ");
 		String famChar = scnr.nextLine();
 		String famInput = famChar.toLowerCase();
-		while(!famInput.equals("a")&& !famInput.equals("b")&&!famInput.equals("c")) {
+		while (!famInput.equals("a") && !famInput.equals("b") && !famInput.equals("c")) {
 			System.out.println("Enter above listed families only.");
 			famChar = scnr.nextLine();
 			famInput = famChar.toLowerCase();
@@ -163,12 +164,11 @@ public class TotalCalculator {
 		}
 		int allPay = 0;
 		workedT = nine - parseStartInt;
-		allPay += 21 * (int)(Math.ceil(workedT / 100.0));
-		
+		allPay += 21 * (int) (Math.ceil(workedT / 100.0));
+
 		workedT = parseEndInt - nine;
-		allPay += 15 * (int)(Math.ceil(workedT / 100.0));
+		allPay += 15 * (int) (Math.ceil(workedT / 100.0));
 		return allPay;
 	}
-	
 
 }
